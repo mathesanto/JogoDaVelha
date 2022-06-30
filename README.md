@@ -1,3 +1,3 @@
 <h1>Jogo da velha</h1>
-</br>
+<br>
 Este é um jogo da velha
