@@ -25,7 +25,12 @@ public class Jogo {
 			System.out.println("1 - easy");
 			System.out.println("2 - normal");
 			System.out.println("3 - hardcore");
-			opcao = teclado.nextInt();
+			
+			try { // Tratamento da exceção para evitar que o usuário não digite um número inteiro
+				opcao = teclado.nextInt();
+				}catch(Exception f) {
+					System.out.println("Problema: " + f);
+					}
 		}
 		
 		if (opcao == 1){ // Aqui o computador nível easy é selecionado
